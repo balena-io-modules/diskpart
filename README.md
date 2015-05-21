@@ -3,6 +3,7 @@ diskpart
 
 [![npm version](https://badge.fury.io/js/diskpart.svg)](http://badge.fury.io/js/diskpart)
 [![dependencies](https://david-dm.org/resin-io/diskpart.png)](https://david-dm.org/resin-io/diskpart.png)
+[![Build status](https://ci.appveyor.com/api/projects/status/4l3wln4g967n9hoc?svg=true)](https://ci.appveyor.com/project/jviotti/diskpart)
 
 Run Windows diskpart scripts in NodeJS.
 
