@@ -33,6 +33,15 @@ exports.runScript = (scriptPath, callback) ->
 		(callback) ->
 			helpers.execute("diskpart /s \"#{scriptPath}\"", callback)
 
+		(output, callback) ->
+
+			# Windows needs some time after the diskpart script
+			# is executed to reflect the changes.
+			# This mainly happened in Windows 10.
+			# An empirically derivated value that seems to be enough is 2s.
+			setTimeout ->
+				return callback(null, output)
+			, 2000
 	], callback)
 
 exports.evaluate = (input, callback) ->

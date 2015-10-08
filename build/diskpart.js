@@ -34,6 +34,10 @@ exports.runScript = function(scriptPath, callback) {
       return callback();
     }, function(callback) {
       return helpers.execute("diskpart /s \"" + scriptPath + "\"", callback);
+    }, function(output, callback) {
+      return setTimeout(function() {
+        return callback(null, output);
+      }, 2000);
     }
   ], callback);
 };
