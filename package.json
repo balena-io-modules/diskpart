@@ -1,6 +1,6 @@
 {
   "name": "diskpart",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Run Windows diskpart scripts in NodeJS",
   "main": "build/diskpart.js",
   "homepage": "https://github.com/resin-io/diskpart",
