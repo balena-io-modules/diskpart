@@ -39,6 +39,7 @@ describe 'Diskpart:', ->
 				@helpersExecuteStub.restore()
 
 			it 'should call helpers.execute with the correct arguments', (done) ->
+				@timeout(5000)
 				diskpart.runScript 'myScript', (error, output) =>
 					expect(error).to.not.exist
 					expect(output).to.equal('Hello World')
@@ -119,6 +120,7 @@ describe 'Diskpart:', ->
 			# after execution.
 
 			it 'should call helpers.execute', (done) ->
+				@timeout(5000)
 				diskpart.evaluate [ 'rescan' ], (error, output) =>
 					expect(error).to.not.exist
 					expect(output).to.equal('Hello World')
