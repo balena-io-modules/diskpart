@@ -5,6 +5,8 @@ diskpart
 [![dependencies](https://david-dm.org/resin-io/diskpart.png)](https://david-dm.org/resin-io/diskpart.png)
 [![Build status](https://ci.appveyor.com/api/projects/status/4l3wln4g967n9hoc?svg=true)](https://ci.appveyor.com/project/jviotti/diskpart)
 
+Join our online chat at [![Gitter chat](https://badges.gitter.im/resin-io/chat.png)](https://gitter.im/resin-io/chat)
+
 Run Windows diskpart scripts in NodeJS.
 
 Notice this module **requires** running with admin privileges. Use modules such as [windosu](https://www.npmjs.com/package/windosu) to provide elevation if you require that feature.
